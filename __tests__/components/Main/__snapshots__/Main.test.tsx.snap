@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Main should render Main component 1`] = `
+<div>
+  <div
+    class="px-8 py-8"
+  />
+</div>
+`;
+
+exports[`Page Main snapshot should snapshot Main component 1`] = `
+<div
+  className="px-8 py-8"
+/>
+`;
