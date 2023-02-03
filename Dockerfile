@@ -1,16 +1,14 @@
-FROM node:8.12.0
+FROM node:16-alpine
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-##################### to build the app ##############################
-#RUN npm run build
-#FROM nginx 
-#COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
-#COPY --from=builder /app/build /usr/share/nginx/html
-#EXPOSE 80
-#CMD ["nginx", "-g", "daemon off;"]
 
-# npm run dev
-CMD [ "npm", "run", "dev" ]
+COPY package.json ./
+RUN apk add --no-cache git \
+    && yarn install --frozen-lockfile \
+    && yarn cache clean
+
+COPY . .
+RUN yarn build
+
 EXPOSE 3000
+
+CMD ["yarn", "start"]
