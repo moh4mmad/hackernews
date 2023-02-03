@@ -1,8 +1,12 @@
 ## HackerNews UI
 
-![Logo](https://i.ibb.co/N19Fhk1/diagram.png)
+![Logo](https://i.ibb.co/X7fmFML/Screenshot-2023-02-03-210120.png)
 
 This project displays the latest 100 hacker news posts in a list form. It has been built using Next.js framework with TypeScript. The project makes use of the HackerNews API to fetch the latest news posts and display them in a user-friendly manner.
+
+## Live
+
+- https://wealthpark-hackernews.netlify.app/
 
 ## Features
 
