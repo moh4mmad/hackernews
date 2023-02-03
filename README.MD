@@ -13,7 +13,7 @@ This project displays the latest 100 hacker news posts in a list form. It has be
 - Display of 100 latest hacker news posts in a list form
 - A loader before data finishes fetching
 - Each news post has a link to navigate to the actual page as a new tab
-- Infinite scrolling or pagination
+- Infinite scrolling
 - Animations
 - Unit testing and snapshot testing
 
